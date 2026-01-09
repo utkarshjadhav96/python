@@ -22,10 +22,10 @@
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlmodel import SQLModel, Field, Session, create_engine, select
+
 from passlib.context import CryptContext
 from jose import jwt, JWTError
 from datetime import datetime, timedelta
-
 # -------------------- CONFIG --------------------
 
 SECRET_KEY = "CHANGE_THIS_SECRET_KEY"
